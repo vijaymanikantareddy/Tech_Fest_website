@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TECH_FEST</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    .nav-item a{
+      color: black;
+    }
+    .l1:hover{
+      background-color: whitesmoke;
+      border-radius: 5px;
+      color: white;
+    }
+    .active{
+      background-color: powderblue;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: orange;">
+  <a class="navbar-brand" href="#" style="color: black;"><b>TECH_FEST</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link  l1" href="index.html" style="color: black;   margin-left: 100px;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link l1" href="about.html" style="margin-left: 100px; color: black;">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link l1" href="event.html" style="margin-left: 100px; color: black;">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link l1" href="register.html" style="margin-left: 100px; color: black;">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="contact.html" style="margin-left: 100px; color: black;">
+          
+          <span class="active" style="padding: 10px;">Contact us</span>
+      </a>
+      </li>   
+      <li>
+        <button data-toggle="modal" data-target="#myModal"  class="form-control btn bg-warning" id="pwd" placeholder="Search Events" style="margin-left: 70px; width: 150px;">Login</button>
+      </li>
+    </ul>
+  </div>  
+</nav>
+<br>
+<!-- Button to Open the Modal -->
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: orange;">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Login Here</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" placeholder="Enter email" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+  </div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+ 
+</form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container">
+  <center><h2 style="border-style: ridge;">Primary Contacts</h2></center><br>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <div class="text-center" style="background-color: lightgray; height: 200px; box-shadow: 2px 2px 2px 2px  black">
+        <br>
+        <p>Vyshnavi Nukala</p>
+        <p>6301754279</p>
+        <p>vyshnavinukala1@gmail.com</p>
+        <button class="btn bg-warning">Contact me</button>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <div class="text-center" style="background-color: lightgray; height: 200px; box-shadow: 2px 2px 2px 2px  black">
+        <br>
+        <p>Kollepara Sai Sriram</p>
+        <p>8008191766</p>
+        <p>saisriramkollepara@gmail.com</p>
+        <button class="btn bg-warning">Contact me</button>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+      
+    </div>
+    
+  </div><br><br>
+   <center><h2 style="border-style: ridge;">Secondary Contacts</h2></center><br>
+   <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Mobile number</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ram</td>
+        <td>+12 48907 00486 </td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>devi</td>
+        <td>+12 48907 00486 </td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>sita</td>
+        <td>+12 48907 00486 </td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- Footer-->
+<div style="background-color: orange; margin-top: 50px; padding-bottom: 10px; padding-top: 20px">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <div class="container">
+        <center><h3>Tech Fest</h3></center>
+      <p style="font-size: 13px;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur.
+      </p>
+      <h3>Follow Us</h3>
+      <button style="font-size:24px; color: black; border-radius: 10px"> <i class="fa fa-facebook-f"></i></button>
+      <button style="font-size:24px; color: black; border-radius: 10px"> <i class="fa fa-linkedin"></i></button>
+      <button style="font-size:24px; color: black; border-radius: 10px"> <i class="fa fa-youtube-play"></i></button>
+    </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <center><h3>About</h3></center>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip t labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <center><h3>UseFull Links</h3>
+
+      >home<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>About us<br>
+      >Event<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>Register<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>Contact<br>
+      </center>
+    </div>
+  </div>
+</div>
+<div class="text-center" style ="background-color:gray;">
+  <p>&#169; Copyrights @2022-Vyshnavi Sriram</p>
+</div>
+
+</body>
+</html>
+
+
